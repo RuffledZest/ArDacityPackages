@@ -23,7 +23,9 @@ npm install gsap
 ## Usage
 
 ```jsx
-import ScrollReveal from './components/ArDacityUi/ScrollReveal';
+import ScrollReveal from './components/ArDacityUi/ScrollReveal/ScrollReveal';
+// Or simply:
+import { ScrollReveal } from './components/ArDacityUi/ScrollReveal';
 
 function App() {
   return (
