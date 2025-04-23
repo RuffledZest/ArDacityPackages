@@ -1,0 +1,20 @@
+import type React from "react";
+export type TextPressureProps = {
+    text?: string;
+    fontFamily?: string;
+    fontUrl?: string;
+    width?: boolean;
+    weight?: boolean;
+    italic?: boolean;
+    alpha?: boolean;
+    flex?: boolean;
+    stroke?: boolean;
+    scale?: boolean;
+    textColor?: string;
+    strokeColor?: string;
+    strokeWidth?: number;
+    className?: string;
+    minFontSize?: number;
+};
+export declare const TextPressure: React.FC<TextPressureProps>;
+export default TextPressure;
