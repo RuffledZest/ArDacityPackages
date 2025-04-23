@@ -15,6 +15,10 @@ const projectRoot = path.resolve(__dirname, "..", "..", "..", "..", "src")
 // Define the target directory for components
 const targetDir = path.join(projectRoot, "components", "ArDacityUi")
 
+// Component-specific folder
+const componentFolder = "TextPressure"
+const componentDir = path.join(targetDir, componentFolder)
+
 // Define the source directory for component templates
 const templateDir = path.join(__dirname, "..", "templates")
 
@@ -29,7 +33,7 @@ function ensureDirectoryExists(directory) {
 // Copy a template file to the target directory
 function copyTemplate(templateName, targetName) {
   const sourcePath = path.join(templateDir, templateName)
-  const targetPath = path.join(targetDir, targetName)
+  const targetPath = path.join(componentDir, targetName)
 
   try {
     const content = fs.readFileSync(sourcePath, "utf8")
@@ -45,17 +49,20 @@ function installComponents() {
   console.log("Installing ArDacity Text Pressure components...")
 
   try {
-    // Ensure the target directory exists
+    // Ensure the target directories exist
     ensureDirectoryExists(path.join(projectRoot, "components"))
     ensureDirectoryExists(targetDir)
+    ensureDirectoryExists(componentDir)
 
-    // Copy all component templates
+    // Copy all component templates to the component-specific folder
     copyTemplate("TextPressure.jsx", "TextPressure.jsx")
     copyTemplate("index.js", "index.js")
 
     console.log("\nArDacity Text Pressure components have been successfully installed!")
     console.log("You can now import them from your components directory:")
-    console.log("import TextPressure from './components/ArDacityUi/TextPressure';")
+    console.log("import TextPressure from './components/ArDacityUi/TextPressure/TextPressure';")
+    console.log("// Or simply:")
+    console.log("import { TextPressure } from './components/ArDacityUi/TextPressure';")
     console.log("\nExample usage:")
     console.log(`
 <div style={{position: 'relative', height: '700px'}}>

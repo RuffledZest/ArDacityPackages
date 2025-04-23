@@ -4,22 +4,23 @@ A React component library that adds dynamic pressure effects to text using varia
 
 ## Installation
 
-\`\`\`bash
+```bash
 npm install @ar-dacity/ardacity-text-pressure
-\`\`\`
+```
 
 or
 
-\`\`\`bash
+```bash
 yarn add @ar-dacity/ardacity-text-pressure
-\`\`\`
+```
 
 ## What Happens During Installation
 
 When you install this package, it automatically:
 
 1. Creates a `components/ArDacityUi` directory in your project (if it doesn't exist)
-2. Copies the TextPressure component files into that directory:
+2. Creates a `TextPressure` subdirectory
+3. Copies the TextPressure component files into that directory:
    - `TextPressure.jsx`
    - `index.js`
 
@@ -27,8 +28,10 @@ When you install this package, it automatically:
 
 After installation, you can import the component directly from your components directory:
 
-\`\`\`jsx
-import TextPressure from './components/ArDacityUi/TextPressure';
+```jsx
+import TextPressure from './components/ArDacityUi/TextPressure/TextPressure';
+// Or simply:
+import { TextPressure } from './components/ArDacityUi/TextPressure';
 
 function App() {
   return (
@@ -48,7 +51,7 @@ function App() {
     </div>
   );
 }
-\`\`\`
+```
 
 ## Component Props
 
@@ -80,7 +83,7 @@ function App() {
 
 ## Example: Customizing the Font
 
-\`\`\`jsx
+```jsx
 <TextPressure
   text="Custom Font"
   fontFamily="My Variable Font"
@@ -90,15 +93,15 @@ function App() {
   italic={false}
   textColor="#000000"
 />
-\`\`\`
+```
 
 ## Example: Minimal Usage
 
 You can also use the component with minimal configuration:
 
-\`\`\`jsx
+```jsx
 <TextPressure/>
-\`\`\`
+```
 
 This will render the component with all default settings and automatic text color based on theme.
 
