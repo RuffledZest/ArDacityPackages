@@ -1,6 +1,6 @@
 {
   "name": "@ar-dacity/ardacity-splash-cursor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Interactive fluid simulation cursor effects for React applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
