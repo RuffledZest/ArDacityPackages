@@ -1,0 +1,26 @@
+{
+  "name": "@ar-dacity/ardacity-aurora",
+  "version": "1.0.1",
+  "description": "WebGL aurora effect for React applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node ./scripts/install.js"
+  },
+  "keywords": ["react", "ui", "components", "animation", "webgl", "aurora", "effect", "gradient", "ogl"],
+  "author": "ArDacity",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "ogl": ">=0.0.73"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "typescript": "^5.3.3"
+  },
+  "files": ["dist", "scripts", "templates", "README.md"]
+} 

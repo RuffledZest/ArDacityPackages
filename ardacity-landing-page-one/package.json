@@ -1,0 +1,29 @@
+{
+  "name": "@ar-dacity/ardacity-landing-page-one",
+  "version": "1.0.0",
+  "description": "Landing page component using ArDacity UI components",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo // This is a placeholder > index.js",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node ./scripts/install.js"
+  },
+  "keywords": ["react", "ui", "components", "landing-page", "arweave", "ardacity", "webgl"],
+  "author": "ArDacity",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "@ar-dacity/ardacity-text-pressure": ">=1.0.0",
+    "@ar-dacity/ardacity-scroll-reveal": ">=1.0.0",
+    "@ar-dacity/ardacity-pixel-transition": ">=1.0.0",
+    "@ar-dacity/ardacity-splash-cursor": ">=1.0.0",
+    "@ar-dacity/ardacity-hyperspeed": ">=1.0.0",
+    "@ar-dacity/ardacity-aurora": ">=1.0.0",
+    "@permaweb/aoconnect": ">=0.0.63"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45"
+  },
+  "files": ["scripts", "templates", "README.md", "index.js"]
+} 
